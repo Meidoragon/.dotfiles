@@ -1,0 +1,48 @@
+[font]
+#normal = { family = <string>, style = <string> }
+#Default:
+#  Linux/BSD: { family = "monospace", style = "Regular" }
+#  Windows: { family = "Consolas", style = "Regular" }
+#  iToddler: { family = "Menlo", style = "Regular" }
+normal = { family = "Mononoki Nerd Font" , style = "Regular" }
+
+#bold = { family = <string>, style = <string> }
+#If family is not specfied, it's the same as normal
+#Default: { style = "Bold" }
+bold = { style = "Bold" }
+
+#italic = { family = <string>, style = <string> }
+#If family is not specfied, it's the same as normal
+#Default: { style = "Italic" }
+italic = {style = "Italic" }
+
+#bold_italic = { family = <string>, style = <string> }
+#If family is not specfied, it's the same as normal
+#Default: { style = "Bold Italic" }
+bold_italic = { style = "Bold Italic" }
+
+#size = <float>
+#Font size in points
+#Default: 11.25
+size = 16
+
+#offset = { x = <int>, y = <int> }
+#Extra space around each character.
+#y is basically line spacing
+#x is basically letter spacing
+#default: { x = 0, y = 0 }
+offset = { x = 0, y = 0 }
+ 
+#glyph_offset = { x = <int>, y = <int> }
+#Where glyphs appear in their cells
+#Higher x values place more to the right
+#Higher y values place higher
+#Default: { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+
+#builtin_box_drawing = <bool>
+#When true, Alacritty will use a custom built-in 
+#font for box drawing characters (Unicode points U+2500 - U+259F) 
+#and powerline symbols (Unicode points U+E0B0 - U+E0B3).
+#Default: true
+builtin_box_drawing = true

@@ -1,0 +1,10 @@
+[selection]
+#semantic_escape_chars = <string>
+#This contains all characters that are usedf as separators for "semantic words" in Alacritty
+#Default: ",│`|:\"' ()[]{}<>\t"
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+#save_to_clipboard = <bool>
+#When set to true, selected text will be copied to the primary clipboard.
+#Default: false
+save_to_clipboard = false

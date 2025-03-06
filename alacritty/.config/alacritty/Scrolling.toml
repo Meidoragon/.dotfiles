@@ -1,0 +1,12 @@
+[scrolling]
+#history = <int>
+#Maximum number of lines the scrollback buffer
+#0 disables
+#Absolute max is 100k
+#Default: 10e4
+history = 10000
+
+#multiplier = <int>
+#Number of line scrolled for every input scroll increment.
+#Default: 3
+multiplier = 3

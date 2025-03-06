@@ -1,0 +1,40 @@
+# Get editor completions based on the config schema
+# Default: 'https://starship.rs/config-schema.json'
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+# Default: true
+add_newline = false
+
+# Replace the '❯' symbol in the prompt with '➜'
+# [character] # The name of the module we are configuring is 'character'
+# success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+# Disable the package module, hiding it from the prompt completely
+# [package]
+# disabled = true
+
+# Timeout for starship to scan files (in milliseconds)
+# Default: 30
+scan_timeout = 30
+
+# Timeout for commmands executed by starship (in milliseconds)
+# Default: 500
+command_timeout = 5000
+
+# Follow symlinks to check if they're directories;
+# used in modules such as git.
+# Recommend to disable when using symlinks to networked filesystems.
+# Default: true
+follow_symlinks = true 
+
+# Sets which color palette from `palettes` to use
+# Default ''
+# palette = ''
+
+# Collection of color palettes that assign colors to user- defined
+# names. Note that color palettes cannot reference their 
+# own color definitions.
+# Default: {}
+# palettes = {}
+

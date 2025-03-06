@@ -1,0 +1,6 @@
+[terminal]
+#osc52 = "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
+#Controls ability to use osc52 escape sequence.
+#Useful to copy and paste from remote server
+#Default: "OnlyCopy"
+osc52 = "OnlyCopy"

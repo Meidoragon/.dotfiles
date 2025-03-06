@@ -1,0 +1,157 @@
+[colors]
+#cursor = { text = <string>, cursor = <string> }
+#Colors used to draw the cursor
+#allowed to use hex colors or CellForeground/CellBackground, which reference the cell in question
+#Default: { text = "CellBackground", cursor = "CellForeground" }
+cursor = { text = "CellBackground", cursor = "CellForeground" }
+
+#vi_mode_cursor = { text = <string>, cursor = <string> }
+#Colors used to draw the cursor when vi mode is active
+#allowed to use hex colors or CellForeground/CellBackground, which reference the cell in question
+#Default: { text = "CellBackground", cursor = "CellForeground" }
+vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
+
+#line_indicator = { foreground = "<string>", background = "<string>" }
+#Color used for the indicator displaying the position in history during search and vi mode.
+#Setting this to "None" will use the opposing primary color.
+#Default: { foreground = "None", background = "None" }
+line_indicator = { foreground = "None", background = "None" }
+
+#footer_bar = { foreground = "<string>", background = "<string>" }
+#color used by the footer bar on the bottom, used by search regex input,
+#hyperlink URI preview, etc.
+#Default: { foreground = "#181818", background = "#d8d8d8" }
+footer_bar = { foreground = "#181818", background = "#d8d8d8" }
+
+#selection = { text = <string>, background = <string> }
+#Colors used for drawing selctions
+#Allowed values are hexadecimal colors like #ff00ff, or 
+#CellForeground/CellBackground, which references the affected cell.
+#Default: { text = "CellBackground", background = "CellForeground" }
+selection =  { text = "CellBackground", background = "CellForeground" }
+
+#indexed_colors = [{ index = <int>, color = <string> },]
+#The indexed colors include all colors from 16 to 256.
+#When not set they're filled with sensible defaults.
+#Default: []
+indexed_colors = []
+
+#transparent_background_colors = <bool>
+#Whether or not window.opacity applies to all cell backgrounds or only to the default background.
+#When set to true all cells will be transaprent regardless of the their background color.
+#Default: false
+transparent_background_colors = false
+
+#draw_bold_text_with_bright_colors = <bool>
+#When true, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors = false
+
+[colors.search]
+#Allowed values here are hexadecimal like #ff00ff or 
+#CellForeground/CellBackground, which references the affected cell.
+
+#matches = { foreground = <string>, background = <string> }
+#Default: { foreground = "#181818", background = "#ac4242" }
+matches = { foreground = "#181818", background = "#ac4242" }
+
+#focued_match = { foreground = <string>, background = <string> }
+#Default: { foreground = "#181818", background = "#f4bf75" }
+focused_match = { foreground = "#181818", background = "#f4bf75" }
+
+[colors.hints]
+#Allowed values here are hexadecimal like #ff00ff or 
+#CellForeground/CellBackground, which references the affected cell.
+
+#start = { foreground = <string>, background = <string> }
+#First character in the hint label
+#Default: { foreground = "#181818", background = "#f4bf75" }
+start = { foreground = "#181818", background = "#f4bf75" }
+
+#end = { foreground = <string>, background = <string> }
+#All characters after the first one in the hint label
+#Default: { foreground = "#181818", background = "#ac4242" }
+end = { foreground = "#181818", background = "#ac4242" }
+
+
+[colors.primary]
+#foreground = <string>
+#Default: "#d8d8d8"
+foreground = "#d8d8d8"
+
+#background = <string>
+#Default: "#181818"
+background = "#181818"
+
+#dim_foreground = <string>
+#if this is not set, the color is automatically calculated based on teh foreground color
+#Default: "#828282"
+dim_foreground = "#828282"
+
+#bright_foreground = <string>
+#this is only used when "draw_bold_text_with_bright_colors" is true
+#If not set, the normal foreground will be used
+#Default: "None"
+bright_foreground = "None"
+
+[colors.normal]
+#These are all hex strings
+#Default:
+# black = "#181818"
+# red = "#ac4242"
+# green = "#90a959"
+# yellow = "#f4bf75"
+# blue = "#6a9fb5"
+# magenta = "#aa759f"
+# cyan = "#75b5aa"
+# white = "#d8d8d8"
+black = "#181818"
+red = "#ac4242"
+green = "#90a959"
+yellow = "#f4bf75"
+blue = "#6a9fb5"
+magenta = "#aa759f"
+cyan = "#75b5aa"
+white = "#d8d8d8"
+
+[colors.bright]
+#These are all hex strings
+#Default:
+# black = "#6b6b6b"
+# red = "#c55555"
+# green = "#aac474"
+# yellow = "#feca88"
+# blue = "#82b8c8"
+# magenta = "#c28cb8"
+# cyan = "#93d3c3"
+# white = "#f8f8f8"
+black = "#6b6b6b"
+red = "#c55555"
+green = "#aac474"
+yellow = "#feca88"
+blue = "#82b8c8"
+magenta = "#c28cb8"
+cyan = "#93d3c3"
+white = "#f8f8f8"
+
+[colors.dim]
+#These are all hex strings
+#If the dim colors are not set, they will be calculated automatically
+#based on the normal colors.
+#Default:
+#black = "#0f0f0f"
+#red = "#712b2b"
+#green = "#5f6f3a"
+#yellow = "#a17e4d"
+#blue = "#456877"
+#magenta = "#704d68"
+#cyan = "#4d7770"
+#white = "#8e8e8e"
+black = "#0f0f0f"
+red = "#712b2b"
+green = "#5f6f3a"
+yellow = "#a17e4d"
+blue = "#456877"
+magenta = "#704d68"
+cyan = "#4d7770"
+white = "#8e8e8e"
+

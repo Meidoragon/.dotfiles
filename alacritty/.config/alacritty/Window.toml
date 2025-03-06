@@ -1,0 +1,84 @@
+[window]
+#dimensions = {columns = <int>, lines = <int>}
+#set dimensions of window in number of lines and columns.
+#Default: { column = 0, lines = 0 }
+dimensions = { columns = 0, lines = 0 }
+
+#position = "None" | {x = <int>, y = <int>}
+#Window start position
+#Specified in number of pixels
+#If "None" the window manager will handle it
+#Default: "None"
+position = "None"
+
+#padding = {x = <int>, y = <int> }
+#Blank space added around the window in pixels.
+#This is scaled by DPI
+#The value is always added at both opposing sides
+#Default: { x = 0, y = 0 }
+padding = { x = 0, y = 0 }
+
+#dynamic_padding = <bool>
+#Spread additional padding evenly around the terminal content.
+#Default: false
+dynamic_padding = false
+
+#decorations = "Full" | "None" | "Transparent" | "Buttonless"
+#Window Decorations
+#Transparent and Buttonless: iToddler exclusive.
+#Full: Borders and titlebar
+#None: Neither borders nor title bar.
+#Default: "Full"
+decorations = "Full"
+
+#opacity = <float>
+#Background opacity as a floting point from 0.0 to 1.0.
+#0.0 is completely transparent and 1.0 is completely opaque
+#Default: 1.0
+opacity = 1.0
+
+#blur = <bool>
+#Request compositor to blur content behind transparent windows.
+#iToddler / KDE Waylend exclusive
+#Default: false
+blur = false
+
+#startup_mode = "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
+#Windowed: Regular window
+#Maximized: Window will be maximized
+#Fullscreen: Window will be fullscreen
+#SimpleFullscreen: iToddler exclusive
+startup_mode = "Windowed"
+
+#title = <string>
+#Window title
+#Default: "Alacritty"
+title = "Alakitty says \"Nyaa\" really fast"
+
+#dynamic_title = <bool>
+#Allow terminal applications to change title
+#Default: true
+dynamic_title = true
+
+#class = { instance = <string>, general = <string> } 
+#Linux/BSD Exclusive
+#Window Class
+#On Wayland 'general' is used as 'app_id' and 'instance' is ignored.
+#Default: {instance = "Alacritty", general = "Alacritty"}
+class = {instance = "Alacritty", general = "Alacritty"}
+
+#decorations_theme_variant = "Dark" | "Light" | "None"
+#override system colour theme
+#"None" uses system theme
+#Default: "None"
+decorations_theme_variant = "None"
+
+#resize_increments = <bool>
+#Prefer resizing window by discrete steps equal to cell dimensions
+resize_increments = false
+
+# option_as_alt = "OnlyLeft" | "OnlyRight" | "Both" | "None"
+#Make Option key behave as Alt
+#iToddler exclusive
+#Default: "None"
+#option_as_alt = "None"

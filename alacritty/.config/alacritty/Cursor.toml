@@ -1,0 +1,40 @@
+[cursor]
+#<shape> = "Block" | "Underline" | "Beam"
+#<blinking> = "Never" | "Off" | "On" | "Always"
+##Never: Prevent the cursor from ever blinking
+##Off: Blinking off by default
+##On: Blinking on by default
+##Always: Force cursor to blink always
+
+#vi_mode_style = { shape = <shape>, blinking = <blinking> } | "None"
+#If vi mode cursor style is none or not specified, it will fall back to the
+#active value of the normal cursor.
+#Default: "None"
+vi_mode_style = "None"
+
+#blink_interval = <int>
+#Cursor blinking interval in milliseconds
+#Default: 750
+blink_interval = 750
+
+#blink_timeout = <int>
+#Time after which cursor stops blinking, in seconds
+#Setting to 0 disables the timeout
+#Default: 5
+blink_timeout = 0
+
+#unfocused_hollow = <bool>
+#When true, the cursor will be rendered as hollow when
+#the window is not focused.
+#Default: true
+unfocused_hollow = true
+
+#thickness = <float>
+#Thickness of the the cursor relative to the cell width
+#Bounded between 0.0 and 1.0 inclusively
+#Default: 0.15
+thickness = 0.15
+
+#style = { shape = <shape>, blinking = <blinking> }
+#Default = { "Block", "Off" }
+style = { shape = "Block", blinking = "Off" }

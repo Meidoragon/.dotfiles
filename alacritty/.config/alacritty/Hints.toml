@@ -1,0 +1,52 @@
+[hints]
+#alphabet = <string>
+#Keys used for hint labels
+#Default: "jfkdls;ahgurieowpq"
+alphabet = "jfkdls;ahgurieowpq"
+
+     
+
+#enabled = [{ <regex>, <hyperlinks>, <post_processing>, <persist>, <action>, <command> <binding>, <mouse> },]
+#Array with all available hints.
+#Each hint must have at least one of regex or hyperlinks and either an action or a command.
+#regex = "<string>"
+##Regex each line will be compared against.
+#hyperlinks = true | false
+##When this is true, all OSC 8 escape sequence hyperlinks will be included in the hints.
+#post_processing = true | false
+##When this is true, heuristics will be used to shorten the match if there are characters likely not to be part of the hint (e.g. a trailing .). This is most useful for URIs and applies only to regex matches.
+#persist = true | false
+##When this is true, hints remain persistent after selection.
+#Action = "Copy" | "Paste" | "Select" | "MoveViModeCursor"
+##Copy: Copy the hint's text to the clipboard.
+##Paste: Paste the hint's text to the terminal or search.
+##Select: Select the hint's text.
+##MoveViModeCursor: Move the vi mode cursor to the beginning of the hint.
+#command = "<string>" | { program = "<string>", args = ["<string>",] }
+##Command which will be executed when the hint is clicked or selected with the binding.
+##The hint's text is always attached as the last argument.
+#binding = { key = "<string>", mods = "<string>", mode = "<string>" }
+##See keyboard.bindings for documentation on available values.
+##This controls which key binding is used to start the keyboard hint selection process.
+#mouse = { mods = "<string>", enabled = true | false }
+##See keyboard.bindings for documentation on available mods.
+##The enabled field controls if the hint should be underlined when hovering over the hint text with all mods pressed.
+#Default:
+# [[hints.enabled]]
+# command = "xdg-open" # On Linux/BSD
+# # command = "open" # On macOS
+# # command = { program = "cmd", args = [ "/c", "start", "" ] } # On Windows
+# hyperlinks = true
+# post_processing = true
+# persist = false
+# mouse.enabled = true
+# binding = { key = "U", mods = "Control|Shift" }
+# regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+[[hints.enabled]]
+command = "xdg-open" # On Linux/BSD
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"

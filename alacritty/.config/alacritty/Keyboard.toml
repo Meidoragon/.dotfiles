@@ -1,0 +1,9 @@
+[keyboard]
+#See man page for documentation
+#I am not summarizing that
+#man 5 alacritty
+bindings = [
+  { key = "F11", action = "ToggleFullscreen" },
+  { key = "Enter", mods = "Alt", action = "ToggleFullscreen" },
+  # { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+]

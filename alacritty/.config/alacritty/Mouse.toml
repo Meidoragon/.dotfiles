@@ -1,0 +1,16 @@
+[mouse]
+#hide_when_typing = <bool>
+#when set to true, the mouse cursor is temporarily disabled while typing
+#Default: false
+hide_when_typing = false
+
+#bindings = [{ <mouse>, <mods>, <mode>, <action> },]
+#See keyboard.bindings for full documentation
+#<mouse> = "Middle" | "Left" | "Right" | "Back" | "Forward" | <int>
+#<action> = <keyboard.bindings.action> | "ExpandSelection"
+##ExpandSelection: Expand the selction to the current mouse cursor location
+#Example: 
+#bindings = [
+#{ mouse = "Right", mods = "Control", action = "Paste" }
+#]
+bindings = []

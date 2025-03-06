@@ -1,0 +1,21 @@
+[bell]
+#animation = "Ease" | "EaseOut" | "EaseOutSine" | "EaseOutQuad" | "EaseOutCubic" | "EaseOutQuart" | "EaseOutQuint" | "EaseOutExpo" | "EaseOutCirc" | "Linear"
+#Visual bell animation effect for flashing the screen when the visual bell is rung
+#Default: "Linear"
+animation = "Linear"
+
+#duration = <int>
+#Duration of the visual b ell flash in milliseconds.
+#setting to 0 will disable
+#Default: 0
+duration = 0
+
+#color = <string>
+#Visual bell animation color
+#Default: #ffffff
+color = "#ffffff"
+
+#command = <string> | {program = <string>, args = [<string>,]}
+#when bell is rung, this program is executed
+#Default: "None"
+command = "None"

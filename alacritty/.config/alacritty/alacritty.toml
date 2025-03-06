@@ -1,0 +1,27 @@
+[general]
+import = [
+"~/.config/alacritty/Env.toml",
+"~/.config/alacritty/Window.toml",
+"~/.config/alacritty/Scrolling.toml",
+"~/.config/alacritty/Font.toml",
+"~/.config/alacritty/Colors.toml",
+"~/.config/alacritty/Bell.toml",
+"~/.config/alacritty/Selection.toml",
+"~/.config/alacritty/Cursor.toml",
+"~/.config/alacritty/Terminal.toml",
+"~/.config/alacritty/Mouse.toml",
+"~/.config/alacritty/Hints.toml",
+"~/.config/alacritty/colorschemes/nightfox.toml",
+"~/.config/alacritty/Keyboard.toml",
+# "~/.config/alacritty/Debug.toml"
+]
+working_directory = "None" #Directory the shell is started in. WHen this is unset, or "None", the working director of the parent process will be used.
+live_config_reload = true #Change requires restart
+ipc_socket = true #Offer inter-process communication using alacritty msg
+
+[terminal.shell]
+# # shell = $SHELL # | { program = "<string>", args = ["<string>",] }
+program = "zellij"
+# args = ["-l", "welcome"]
+# args = ["options", "--default-shell", "nu"]
+
