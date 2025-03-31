@@ -1,6 +1,8 @@
+[include]
+	path = ~/.gitconfig.local
 [user]
 	name = meidoragon
-	signingkey = E0D072004B4BFB01
 	email = 104027002+Meidoragon@users.noreply.github.com
+
 [init]
 	defaultBranch = main
