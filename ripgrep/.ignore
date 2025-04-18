@@ -1,0 +1,10 @@
+# tell ripgrep to ignore these directories.
+# don't want it looking at things that I have no direct interest in 99% of the time
+/dev
+/m
+/media
+/mnt
+/proc
+/root
+/run
+/sys
